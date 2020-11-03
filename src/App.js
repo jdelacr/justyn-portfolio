@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import "./styles/App.scss";
 import Main from "./pages/Main";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
