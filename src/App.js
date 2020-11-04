@@ -14,20 +14,22 @@ export class Pages extends Component {
       <Router>
         <Nav />
 
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route exact path="/Education">
-            <Education />
-          </Route>
-          <Route exact path="/Experience">
-            <Experience />
-          </Route>
-          <Route exact path="/Projects">
-            <Projects />
-          </Route>
-        </Switch>
+        <div className="main-body">
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <Route exact path="/Education">
+              <Education />
+            </Route>
+            <Route exact path="/Experience">
+              <Experience />
+            </Route>
+            <Route exact path="/Projects">
+              <Projects />
+            </Route>
+          </Switch>
+        </div>
 
         <Footer />
       </Router>

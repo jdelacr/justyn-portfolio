@@ -1,0 +1,28 @@
+.education {
+    display: flex;
+    flex-direction: column;
+}
+
+.gmu,
+.nova {
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+
+    &__info,
+    &__logo {
+        width: 50%;
+    }
+
+    &__info {
+        color: white;
+    }
+}
+
+.gmu__info {
+    background-color: #063;
+}
+
+.nova__info {
+    background-color: #d3a20c;
+}
