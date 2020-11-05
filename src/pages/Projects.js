@@ -2,7 +2,26 @@ import React, { Component } from "react";
 
 export class Projects extends Component {
   render() {
-    return <div>Projects</div>;
+    return (
+      <div>
+        <div>
+          <div>
+            <h1>Periodic Table</h1>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h1>React</h1>
+          </div>
+          <div>
+            <h1>Vue</h1>
+          </div>
+          <div>
+            <h1>PHP</h1>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
 
