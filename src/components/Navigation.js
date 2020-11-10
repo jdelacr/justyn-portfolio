@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
+import { Icon, InlineIcon } from "@iconify/react";
 import "../styles/components/navigation.scss";
+import Home from "@material-ui/icons/Home";
+import BusinessIcon from "@material-ui/icons/Business";
+import gradudationCap from "@iconify-icons/zmdi/graduation-cap";
+import Assignment from "@material-ui/icons/Assignment";
 
 export class navigation extends Component {
   render() {
@@ -13,6 +18,7 @@ export class navigation extends Component {
               className="nav-list--item"
               activeClassName="nav-list--home"
             >
+              <Home className="nav-list--icon" />
               Home
             </NavLink>
           </li>
@@ -22,6 +28,7 @@ export class navigation extends Component {
               className="nav-list--item"
               activeClassName="nav-list--active"
             >
+              <Icon icon={gradudationCap} className="nav-list--icon" />{" "}
               Education
             </NavLink>
           </li>
@@ -31,7 +38,7 @@ export class navigation extends Component {
               className="nav-list--item"
               activeClassName="nav-list--active"
             >
-              Experience
+              <BusinessIcon className="nav-list--icon" /> Experience
             </NavLink>
           </li>
           <li className="nav-list">
@@ -40,7 +47,7 @@ export class navigation extends Component {
               className="nav-list--item"
               activeClassName="nav-list--active"
             >
-              Projects
+              <Assignment className="nav-list--icon" /> Projects
             </NavLink>
           </li>
         </ul>

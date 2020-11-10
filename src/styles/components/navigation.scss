@@ -7,6 +7,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: baseline;
 
     &-list {
 
@@ -18,8 +19,10 @@ nav {
             line-height: 1rem;
             font-weight: 700;
             text-decoration: none;
-            padding: 1.5rem;
+            padding: 1rem;
             position: relative;
+            display: flex;
+            align-items: center;
 
             &::after {
                 content: "";
@@ -67,6 +70,12 @@ nav {
                     height: 100%;
                 }
             }
+        }
+
+        &--icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: .5rem;
         }
     }
 }
