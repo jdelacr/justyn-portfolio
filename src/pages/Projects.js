@@ -6,17 +6,21 @@ export class Projects extends Component {
       <div>
         <div>
           <div>
+            <div>Project Thumbnail</div>
             <h1>Periodic Table</h1>
           </div>
         </div>
         <div>
           <div>
+            <div>Project Thumbnail</div>
             <h1>React</h1>
           </div>
           <div>
+            <div>Project Thumbnail</div>
             <h1>Vue</h1>
           </div>
           <div>
+            <div>Project Thumbnail</div>
             <h1>PHP</h1>
           </div>
         </div>

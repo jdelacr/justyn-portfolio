@@ -1,73 +1,15 @@
 .experience {
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 800px;
-    margin: 0 auto;
+    &--list {
+        margin-top: 12px;
 
-    &-item {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    }
-
-    &-custom {
-        order: 1;
-    }
-
-    &-date {
-        text-align: center;
-        display: flex;
-        order: 2;
-        flex-basis: 6.25rem;
-        font-size: 1.75rem;
-
-        & > p {
-            font-size: 1.25rem;
-            padding: 0.625rem;
-            margin: auto;
+        &--item {
+            list-style: none;
         }
     }
-
-    &-info {
-        order: 3;
-        padding: 1.25rem;
-        padding-left: 0.625rem;
-        width: 80%;
-        margin-bottom: 1.25rem;
-
-        &--list {
-
-            &--item {
-                list-style: none;
-            }
-        }
-    }
-
-    @media screen and (min-width: 640px) {
-
-        &-info,
-        &-custom {
-            width: 40%;
-        }
-
-        &-align--right >  &-info,
-        &-align--left >  &-custom, {
-            order: 1;
-            padding-right: 0.625rem;
-        }
     
-        &-align--right >  &-date,
-        &-align--left >  &-date {
-            order: 2;
-        }
-    
-        &-align--right >  &-custom,
-        &-align--left >  &-info {
-            order: 3;
-        }   
+
+    &--date{
+        font-size: 18px;
     }
 }
