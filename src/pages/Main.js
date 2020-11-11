@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Profile from "../assets/Profile.jpg";
 import "../styles/pages/Main.scss";
+import "../styles/components/button.scss";
 
 export class Main extends Component {
   render() {
@@ -21,12 +22,15 @@ export class Main extends Component {
               and Web development
             </h3>
             <div>
-              <button>Connect with me!</button>
+              <button className="btn">
+                Connect <span className="btn-text">with me!</span>
+                <span className="btn-arr">&rarr;</span>
+              </button>
             </div>
           </div>
         </div>
         <div className="skill">
-          <h1>SKILLS</h1>
+          <h1 className="skill--hed">SKILLS</h1>
           <ul className="skill--list">
             <li className="skill--list--item">HTML</li>
             <li className="skill--list--item">CSS</li>
