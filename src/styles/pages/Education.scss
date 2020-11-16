@@ -5,24 +5,41 @@
 
 .gmu,
 .nova {
-    min-height: 500px;
+    min-height: 250px;
     display: flex;
     flex-direction: row;
 
     &__info,
     &__logo {
-        width: 50%;
+        flex: 1 50%;
+        padding: 1rem;
     }
 
     &__info {
         color: white;
     }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__logo {
+        display: flex;
+    }
+    
 }
 
 .gmu__info {
-    background-color: #063;
+    background-color: rgba(0, 102, 51, 0.39); //#063
+    &:hover {
+        background-color: rgba(0, 102, 51, 1);
+    }
 }
 
 .nova__info {
-    background-color: #d3a20c;
+    background-color: rgba(211, 162, 12, 0.5); //#d3a20c
+
+    &:hover {
+        background-color: rgba(211, 162, 12, 1);
+    }
 }

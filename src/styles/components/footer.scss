@@ -31,6 +31,8 @@
             text-decoration: none;
             padding: 1rem 1rem .5rem 0;
             position: relative;
+            color: #a9a9a9;
+            transition: all .2s;
 
             &::after {
                 content: "";
@@ -46,10 +48,16 @@
                 transition: width .4s, opacity .5s;
             }
 
-            &:hover:after {
-                width: 100%;
-                opacity: 1;
+            &:hover {
+
+                color: #ffffff;
+
+                &:after {
+                    width: 100%;
+                    opacity: 1;
+                }
             }
+            
         }
     }
 
@@ -65,6 +73,7 @@
                 list-style: none;
                 margin: 0rem .5rem .5rem;
                 position: relative;
+                color: #a9a9a9;
 
                 &::after {
                     content: "";
@@ -85,6 +94,7 @@
                     opacity: 1;
                 }
             }
+            
         }
 
         &--icon {
