@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import "../styles/components/navigation.scss";
 import Home from "@material-ui/icons/Home";
 import BusinessIcon from "@material-ui/icons/Business";

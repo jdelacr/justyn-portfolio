@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../styles/components/card.scss";
 
 export class Card extends Component {
   render() {
@@ -13,6 +14,7 @@ export class Card extends Component {
                   ? require(`../assets/${this.props.image}.jpg`).default
                   : require(`../assets/default_card_image.png`).default
               }
+              alt={this.props.alt}
             />
           </div>
           <h1 className="card--hed">
