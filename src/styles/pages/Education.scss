@@ -5,41 +5,49 @@
 
 .gmu,
 .nova {
-    min-height: 250px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    margin: .5rem 0 2rem 0;
+    padding: 1rem;
+    height: 190px;
 
-    &__info,
-    &__logo {
-        flex: 1 50%;
-        padding: 1rem;
+    & > * {
+        flex: 1 1 50%;
     }
 
-    &__info {
-        color: white;
+    &--img {
+        width: 50%;
+        margin: 0 auto;
     }
 
-    &__img {
-        width: 100%;
-    }
-
-    &__logo {
+    &--logo {
         display: flex;
     }
-    
-}
 
-.gmu__info {
-    background-color: rgba(0, 102, 51, 0.39); //#063
-    &:hover {
-        background-color: rgba(0, 102, 51, 1);
+    &--info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--text {
+        flex-grow: 1;
+    }
+
+    &--website {
+        width: 100%;
+        display: flex;
+    }
+
+    &--link {
+        padding: 1.5rem;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.125rem;
     }
 }
 
-.nova__info {
-    background-color: rgba(211, 162, 12, 0.5); //#d3a20c
-
-    &:hover {
-        background-color: rgba(211, 162, 12, 1);
-    }
+.nova--img {
+    width: 75%;
 }
