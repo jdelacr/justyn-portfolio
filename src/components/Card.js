@@ -7,17 +7,15 @@ export class Card extends Component {
       <div className="card">
         <div className="card--body">
           <div className="card--thumbnail">
-            <div className="card--thumbnail--border">
-              <img
-                className="card--img"
-                src={
-                  this.props.image != null
-                    ? require(`../assets/${this.props.image}.jpg`).default
-                    : require(`../assets/default_card_image.png`).default
-                }
-                alt={this.props.alt}
-              />
-            </div>
+            <img
+              className="card--img"
+              src={
+                this.props.image != null
+                  ? require(`../assets/${this.props.image}.jpg`).default
+                  : require(`../assets/default_card_image.png`).default
+              }
+              alt={this.props.alt}
+            />
           </div>
           <div className="card--info">
             <h1 className="card--hed">
