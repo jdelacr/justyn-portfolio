@@ -19,7 +19,11 @@ export class Education extends Component {
               <h4>2017-2020</h4>
             </div>
             <div className="gmu--website">
-              <a href="#" className="gmu--link">
+              <a
+                href="https://www2.gmu.edu/"
+                className="gmu--link"
+                target="_blank"
+              >
                 Visit Site
               </a>
             </div>
@@ -37,7 +41,11 @@ export class Education extends Component {
               <h4>2013-2016</h4>
             </div>
             <div className="nova--website">
-              <a href="#" className="nova--link">
+              <a
+                href="https://www.nvcc.edu/"
+                className="nova--link"
+                target="_blank"
+              >
                 Visit Site
               </a>
             </div>

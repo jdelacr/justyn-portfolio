@@ -32,6 +32,7 @@
 
     &--text {
         flex-grow: 1;
+        line-height: 1.8;
     }
 
     &--website {
@@ -45,8 +46,39 @@
         text-align: center;
         text-decoration: none;
         font-size: 1.125rem;
+        position: relative;
+
+        &::after  {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            z-index: -1;
+            transition: all .2s;
+        }
+
+        &:hover {
+
+            &:after {
+                height: 100%;
+                box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,.8);
+            }
+        }
+
     }
 }
+
+.gmu--link::after {
+    background-color: rgb(0,102,51);
+    
+}
+
+.nova--link::after {
+    background-color: rgb(210,162,13);
+}
+
 
 .nova--img {
     width: 75%;
