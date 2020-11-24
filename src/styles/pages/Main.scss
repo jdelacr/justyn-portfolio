@@ -69,3 +69,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .about {
+
+        &--info {
+            padding: 0 1.5rem;
+        }
+    }
+    .skill, .about {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+  }

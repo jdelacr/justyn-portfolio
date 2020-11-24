@@ -9,7 +9,6 @@
     align-items: center;
     margin: .5rem 0 2rem 0;
     padding: 1rem;
-    height: 190px;
 
     & > * {
         flex: 1 1 50%;
@@ -82,4 +81,17 @@
 
 .nova--img {
     width: 75%;
+}
+
+
+@media only screen and (max-width: 415px){
+    .gmu,
+    .nova {
+        flex-direction: column;
+        align-items: stretch;
+
+        &--img {
+            width: 100%;
+        }
+    }
 }
