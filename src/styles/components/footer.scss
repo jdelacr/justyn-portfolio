@@ -1,3 +1,5 @@
+@import 'color';
+
 footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,7 +38,7 @@ footer {
             text-decoration: none;
             padding: 1rem 1rem .5rem 0;
             position: relative;
-            color: #a9a9a9;
+            color: rgb(243, 243, 243);;
             transition: all .2s;
 
             &::after {
@@ -49,13 +51,13 @@ footer {
                 width: 0;
                 z-index: -1;
                 opacity: 0;
-                background-color: #ff6b88;
+                background-color: $blue3;
                 transition: width .4s, opacity .5s;
             }
 
             &:hover {
 
-                color: #ffffff;
+                color: $textColor;
 
                 &:after {
                     width: 100%;
@@ -78,7 +80,7 @@ footer {
                 list-style: none;
                 margin: 0rem .5rem .5rem;
                 position: relative;
-                color: #a9a9a9;
+                color: $lightGray;
 
                 &::after {
                     content: "";
@@ -90,7 +92,7 @@ footer {
                     width: 0;
                     z-index: -1;
                     opacity: 0;
-                    background-color: #ff6b88;
+                    background-color: $blue3;
                     transition: width .4s, opacity .5s;
                 }
     

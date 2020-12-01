@@ -21,10 +21,12 @@ export class Header extends React.Component {
             and Web development
           </h3>
           <div>
-            <button className="btn">
-              Connect <span className="btn-text">with me!</span>
-              <span className="btn-arr">&rarr;</span>
-            </button>
+            <a href="https://www.linkedin.com/in/janjustyn/">
+              <button className="btn">
+                Connect <span className="btn-text">with me!</span>
+                <span className="btn-arr">&rarr;</span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
