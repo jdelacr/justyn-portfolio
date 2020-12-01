@@ -1,8 +1,37 @@
 import React, { Component } from "react";
 import "../styles/components/card.scss";
 
+export class Preview extends React.Component {
+  render() {
+    return (
+      <a href={this.props.link} className="card-center">
+        Preview
+      </a>
+    );
+  }
+}
+
+export class Code extends React.Component {
+  render() {
+    return (
+      <a href={this.props.link} className="card-center">
+        Code
+      </a>
+    );
+  }
+}
+
 export class Card extends Component {
   render() {
+    let hasPreview = false;
+    let hasCode = false;
+    if (this.props.preview != null) {
+      hasPreview = true;
+    }
+    if (this.props.code != null) {
+      hasCode = true;
+    }
+
     return (
       <div className="card">
         <div className="card--body">
@@ -27,7 +56,8 @@ export class Card extends Component {
               </p>
             </div>
             <div className="card--link">
-              <a href="#">Preview</a> <a href="#">Code</a>
+              {hasPreview ? <Preview link={this.props.preview} /> : ""}
+              {hasCode ? <Code link={this.props.code} /> : ""}
             </div>
           </div>
         </div>

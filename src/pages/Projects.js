@@ -12,14 +12,17 @@ export class Projects extends Component {
             image="periodic_element"
             title="Periodic Table"
             info="A web based game in C&EN featuring the use of Vue.js and Firebase."
+            preview="https://cen.acs.org/sections/periodic-table-quiz.html"
           />
           <Card
             title="Donor Scroll Concept"
             info="A concept that scrolls through the list of donators on the donation page of PETA."
+            preview="https://support.peta.org/page/22628/donate/1?mode=DEMO&locale=en-US"
           />
           <Card
             title="PETA Currency Conversion"
             info="A feature that caches the daily rates for currency using PHP and JQuery to append the dropdown and information box in the donation page."
+            code="https://github.com/jdelacr/PETA"
           />
         </div>
         <h1>Learning Projects</h1>
@@ -31,8 +34,9 @@ export class Projects extends Component {
           <Card
             title="Vue"
             info="Lists of large/small projects on learning Vue.js"
+            preview="https://jdelacr.github.io/App-Projects-Vue/"
+            code="https://github.com/jdelacr/App-Projects-Vue"
           />
-          <Card title="PHP" info="Lists of large/small projects on PHP" />
         </div>
       </div>
     );
