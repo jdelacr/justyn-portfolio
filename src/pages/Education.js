@@ -2,56 +2,83 @@ import React, { Component } from "react";
 import "../styles/pages/Education.scss";
 import GMU from "../assets/George_Mason_University_logo.svg";
 import NOVA from "../assets/Northern_Virginia_Community_College_logo.svg";
+import {
+  Button,
+  Divider,
+  Header,
+  Icon,
+  Item,
+  ItemGroup,
+  Segment,
+} from "semantic-ui-react";
 
 export class Education extends Component {
   render() {
     return (
-      <div className="education">
-        <div className="gmu">
-          <div className="gmu--logo">
-            <img src={GMU} alt="gmu--logo" className="gmu--img" />
-          </div>
-          <div className="gmu--info">
-            <div className="gmu--text">
-              <h1>George Mason University</h1>
-              <h2>Information Technology</h2>
-              <h3>Bachelors of Science</h3>
-              <h4>2017-2020</h4>
-            </div>
-            <div className="gmu--website">
-              <a
-                href="https://www2.gmu.edu/"
-                className="gmu--link"
-                target="_blank"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="nova">
-          <div className="nova--logo">
-            <img src={NOVA} alt="gmu--logo" className="nova--img" />
-          </div>
-          <div className="nova--info">
-            <div className="nova--text">
-              <h1>Northern Virginia Community College</h1>
-              <h2>Applied Computer Science</h2>
-              <h3>Associates</h3>
-              <h4>2013-2016</h4>
-            </div>
-            <div className="nova--website">
-              <a
-                href="https://www.nvcc.edu/"
-                className="nova--link"
-                target="_blank"
-              >
-                Visit Site
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Segment basic id="Education">
+        <Divider horizontal>
+          {" "}
+          <Header as="h1" content="Education" />
+        </Divider>
+        <ItemGroup divided>
+          <Item>
+            <Item.Image src={GMU} />
+            <Item.Content>
+              <Item.Header>George Mason University</Item.Header>
+              <Item.Meta>
+                <span className="education--year">2017-2020</span>
+              </Item.Meta>
+              <Item.Description>
+                Graduated with Bachelors of Science in Information Technology
+                with concentration in Multimedia & Web Development.
+              </Item.Description>
+              <Item.Extra>
+                <Button
+                  primary
+                  floated="right"
+                  as="a"
+                  href="https://www2.gmu.edu/"
+                  target="_blank"
+                  animated="vertical"
+                >
+                  <Button.Content visible> Visit Site </Button.Content>
+                  <Button.Content hidden>
+                    <Icon name="arrow right" />
+                  </Button.Content>
+                </Button>
+              </Item.Extra>
+            </Item.Content>
+          </Item>
+
+          <Item>
+            <Item.Image src={NOVA} />
+            <Item.Content>
+              <Item.Header>Northern Virginia College</Item.Header>
+              <Item.Meta>
+                <span className="education--year">2013-2016</span>
+              </Item.Meta>
+              <Item.Description>
+                Graduated with Associates in Applied Computer Science on
+                December, 2016.
+              </Item.Description>
+              <Item.Extra>
+                <Button
+                  primary
+                  floated="right"
+                  href="https://www.nvcc.edu/"
+                  target="_blank"
+                  animated="vertical"
+                >
+                  <Button.Content visible> Visit Site </Button.Content>
+                  <Button.Content hidden>
+                    <Icon name="arrow right" />
+                  </Button.Content>
+                </Button>
+              </Item.Extra>
+            </Item.Content>
+          </Item>
+        </ItemGroup>
+      </Segment>
     );
   }
 }

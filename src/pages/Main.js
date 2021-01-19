@@ -1,9 +1,17 @@
 import React, { Component } from "react";
+import {
+  Container,
+  Segment,
+  Header,
+  Image,
+  Icon,
+  Grid,
+  Divider,
+} from "semantic-ui-react";
 import Profile from "../assets/Profile.jpg";
 import "../styles/pages/Main.scss";
-import "../styles/components/button.scss";
 
-export class Header extends React.Component {
+/* export class Header extends React.Component {
   render() {
     return (
       <div className="header">
@@ -72,14 +80,116 @@ export class Skills extends React.Component {
       </div>
     );
   }
-}
+} */
 
+export class Skills extends Component {
+  render() {
+    return (
+      <>
+        <Divider horizontal>
+          <Header as="h1" content="Skills" />
+        </Divider>
+        <Grid columns={3} doubling>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="html5" className="skills--icon" />
+              <p>HTML5</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="css3" className="skills--icon" />
+              <p>CSS</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="js square" className="skills--icon" />
+              <p>Javascript</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="react" className="skills--icon" />
+              <p>React</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="php" className="skills--icon" />
+              <p>PHP</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="vuejs" className="skills--icon" />
+              <p>Vue</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="sass" className="skills--icon" />
+              <p>Sass</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="wordpress" className="skills--icon" />
+              <p>Wordpress</p>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment basic textAlign="center">
+              <Icon name="npm" className="skills--icon" />
+              <p>NPM</p>
+            </Segment>
+          </Grid.Column>
+        </Grid>
+      </>
+    );
+  }
+}
+export class Hero extends Component {
+  render() {
+    return (
+      <div>
+        <Segment vertical textAlign="center" className="main--hero">
+          <Container text>
+            <Image
+              src={Profile}
+              circular
+              size="medium"
+              centered
+              className="main--header"
+            />
+            <Header
+              as="h1"
+              content="Hi, my name is Jan Justyn Dela Cruz"
+              inverted
+            />
+            <Header as="h2" content="Building website is my passion" inverted />
+            <Header
+              as="h3"
+              content="A Frontend developer in Virginia"
+              inverted
+            />
+            <Header
+              as="h3"
+              content="I specialize in UI/UX Development, Responsive Web
+            Design,&nbsp; and Web development"
+              inverted
+            />
+          </Container>
+        </Segment>
+      </div>
+    );
+  }
+}
 export class Main extends Component {
   render() {
     return (
-      <div className="main">
-        <Header />
-        <About />
+      <div className="main" id="Main">
+        <Hero />
         <Skills />
       </div>
     );

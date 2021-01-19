@@ -1,98 +1,122 @@
 import React, { Component } from "react";
+import { Divider, Header, List, Segment } from "semantic-ui-react";
 import "../styles/pages/Experience.scss";
-import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
-import Timeline from "@material-ui/lab/Timeline";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeperator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
-import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 
 export class Experience extends Component {
   render() {
     return (
-      <Timeline align="alternate">
-        <TimelineItem>
-          <TimelineOppositeContent>
-            <div className="experience--date">2020</div>
-          </TimelineOppositeContent>
-          <TimelineSeperator>
-            <TimelineDot color="black">
-              <BusinessCenterIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeperator>
-          <TimelineContent>
-            <div className="experience">
-              <div>
-                <h1>4Site Interactive Studios</h1>
-                <h3>Junior Web Developer</h3>
-                <h4>Jul 2020 - Oct 2020</h4>
-              </div>
-              <div>
-                <ul className="experience--list">
-                  <li className="experience--list--item">
-                    Developed resposnive website themes for nonprofit clients
-                    using Wordpress and Drupal.
-                  </li>
-                  <li className="experience--list--item">
-                    Create and maintain code documentaion and technical.
-                    specifications
-                  </li>
-                  <li className="experience--list--item">
-                    Collaborated with the internal creative and technical teams.
-                  </li>
-                  <li className="experience--list--item">
-                    Record effort and progress in 3rd party project management
-                    tools.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineOppositeContent>
-            <div className="experience--date">2019</div>
-          </TimelineOppositeContent>
-          <TimelineSeperator>
-            <TimelineDot color="black">
-              <BusinessCenterIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeperator>
-          <TimelineContent>
-            <div className="experience">
-              <div>
-                <h1>American Chemical Society</h1>
-                <h3>Web Design Intern</h3>
-                <h4>May 2019 - Aug 2019</h4>
-              </div>
-              <div>
-                <ul className="experience--list">
-                  <li className="experience--list--item">
-                    Collaborated with web deisgners and developers to refine and
-                    the user experience for C&EN Readers.
-                  </li>
-                  <li className="experience--list--item">
-                    Developed wireframes, mocups, and preliminary web deisgns
-                    taht can be reviewed by editors and designers.
-                  </li>
-                  <li className="experience--list--item">
-                    Aligned the design direction and improve the page load times
-                    of the C&EN content online.
-                  </li>
-                  <li className="experience--list--item">
-                    Developed and tested periodic table element quiz for
-                    International Year of the Periodic Table.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </TimelineContent>
-        </TimelineItem>
-      </Timeline>
+      <Segment basic inverted id="Experience">
+        <Divider horizontal>
+          <Header as="h1" content="Experience" inverted />
+        </Divider>
+        <Segment raised className="experience--segment">
+          <Header as="h1" content="4Site Interactive Studios" />
+          <Header
+            sub
+            content="May 2019 - Aug 2019"
+            className="experience--date"
+          />
+          <Divider />
+          <Header as="h3" content="Position: Web Design Intern" />
+          <List>
+            <List.Item>
+              <List.Header>Responsibilities: </List.Header>
+              <List.List>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Collaborated with web deisgners and developers to refine
+                      and the user experience for C&EN Readers.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Developed wireframes, mocups, and preliminary web deisgns
+                      taht can be reviewed by editors and designers.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Aligned the design direction and improve the page load
+                      times of the C&EN content online.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Developed and tested periodic table element quiz for
+                      International Year of the Periodic Table.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+              </List.List>
+            </List.Item>
+          </List>
+        </Segment>
+
+        <Segment raised className="experience--segment">
+          <Header as="h1" content="American Chemical Society" />
+          <Header
+            sub
+            content="Jul 2020 - Oct 2020"
+            className="experience--date"
+          />
+          <Divider />
+          <Header as="h3" content="Position: Junior Web Developer" />
+          <List>
+            <List.Item>
+              <List.Header>Responsibilities: </List.Header>
+              <List.List>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Developed resposnive website themes for nonprofit clients
+                      using Wordpress and Drupal.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Create and maintain code documentaion and technical.
+                      specifications
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Collaborated with the internal creative and technical
+                      teams.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Record effort and progress in 3rd party project management
+                      tools.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+              </List.List>
+            </List.Item>
+          </List>
+        </Segment>
+      </Segment>
     );
   }
 }
