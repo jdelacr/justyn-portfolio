@@ -5,7 +5,6 @@ import {
   Container,
   Divider,
   Grid,
-  Header,
   Icon,
   List,
   Segment,
@@ -64,7 +63,7 @@ export class footer extends Component {
             </Grid.Row>
           </Grid>
         </Container>
-        <Container textAlign="center">
+        <Container textAlign="center" className="footer--social">
           <Segment inverted basic vertical>
             <List horizontal relaxed inverted>
               <List.Item as="a" href="https://github.com/jdelacr">
