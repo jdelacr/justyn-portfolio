@@ -1,15 +1,8 @@
 .experience {
 
-    &--list {
-        margin-top: 12px;
-
-        &--item {
-            list-style: none;
-        }
-    }
-    
-
-    &--date{
-        font-size: 18px;
+    &--segment {
+        max-width: 900px !important;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
     }
 }
