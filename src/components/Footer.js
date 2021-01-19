@@ -1,65 +1,90 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "../styles/components/footer.scss";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import EmailIcon from "@material-ui/icons/Email";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import {
+  Container,
+  Divider,
+  Grid,
+  Header,
+  Icon,
+  List,
+  Segment,
+} from "semantic-ui-react";
 
 export class footer extends Component {
   render() {
     return (
-      <footer className="footer">
-        <div className="footer-logo">
-          <div>
+      /*       <Segment inverted basic className="footer">
+        <Grid container columns={2} relaxed stackable divided inverted>
+          <Grid.Column>
+            <Segment inverted basic>
+              <Logo fill="white" />
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Segment inverted basic textAlign="center">
+              <Header as="h2" content="Sitemap" />
+              <Divider />
+            </Segment>
+          </Grid.Column>
+        </Grid>
+      </Segment> */
+      <Segment inverted basic className="footer" vertical>
+        <Container textAlign="center" text>
+          <Grid columns={4} divided stackable inverted>
+            <Grid.Row>
+              <Grid.Column>
+                <List link inverted>
+                  <List.Item as="a" href="#Main">
+                    Home
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List link inverted>
+                  <List.Item as="a" href="#Experience">
+                    Experience
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List link inverted>
+                  <List.Item as="a" href="#Projects">
+                    Projects
+                  </List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>
+                <List link inverted>
+                  <List.Item as="a" href="#Education">
+                    Education
+                  </List.Item>
+                </List>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </Container>
+        <Container textAlign="center">
+          <Segment inverted basic vertical>
+            <List horizontal relaxed inverted>
+              <List.Item as="a" href="https://github.com/jdelacr">
+                <Icon name="github square" className="footer--social--icons" />
+              </List.Item>
+              <List.Item as="a" href="https://www.linkedin.com/in/janjustyn/">
+                <Icon name="linkedin" className="footer--social--icons" />
+              </List.Item>
+              <List.Item as="a" href="mailto:delacruz.janjustyn@gmail.com">
+                <Icon name="mail" className="footer--social--icons" />
+              </List.Item>
+            </List>
+          </Segment>
+        </Container>
+        <Divider horizontal inverted>
+          <Segment inverted basic className="footer--logo">
             <Logo fill="white" />
-          </div>
-        </div>
-        <div className="footer-nav">
-          <h1 className="footer-nav--hed">Sitemap</h1>
-          <ul className="footer-list">
-            <li className="footer-list--item">
-              <NavLink to="/" className="footer-list--link">
-                Home
-              </NavLink>
-            </li>
-            <li className="footer-list--item">
-              <NavLink to="/Education" className="footer-list--link">
-                Education
-              </NavLink>
-            </li>
-            <li className="footer-list--item">
-              <NavLink to="/Experience" className="footer-list--link">
-                Experience
-              </NavLink>
-            </li>
-            <li className="footer-list--item">
-              <NavLink to="/Projects" className="footer-list--link">
-                Projects
-              </NavLink>
-            </li>
-          </ul>
-          <div className="footer-social">
-            <ul className="footer-social-list">
-              <li className="footer-social-list--item">
-                <a href="https://www.linkedin.com/in/janjustyn/">
-                  <LinkedInIcon className="footer-social--icon" />
-                </a>
-              </li>
-              <li className="footer-social-list--item">
-                <a href="mailto:delacruz.janjustyn@gmail.com">
-                  <EmailIcon className="footer-social--icon" />
-                </a>
-              </li>
-              <li className="footer-social-list--item">
-                <a href="https://github.com/jdelacr">
-                  <GitHubIcon className="footer-social--icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+          </Segment>
+        </Divider>
+      </Segment>
     );
   }
 }
