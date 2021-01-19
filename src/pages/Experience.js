@@ -13,7 +13,7 @@ export class Experience extends Component {
           <Header as="h1" content="4Site Interactive Studios" />
           <Header
             sub
-            content="May 2019 - Aug 2019"
+            content="Jul 2020 - Oct 2020"
             className="experience--date"
           />
           <Divider />
@@ -67,7 +67,7 @@ export class Experience extends Component {
           <Header as="h1" content="American Chemical Society" />
           <Header
             sub
-            content="Jul 2020 - Oct 2020"
+            content="May 2019 - Aug 2019"
             className="experience--date"
           />
           <Divider />
