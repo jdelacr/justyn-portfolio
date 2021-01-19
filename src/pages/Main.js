@@ -9,6 +9,7 @@ import {
   Divider,
 } from "semantic-ui-react";
 import Profile from "../assets/Profile.jpg";
+import BGvid from "../assets/bg-video.mp4";
 import "../styles/pages/Main.scss";
 
 /* export class Header extends React.Component {
@@ -82,6 +83,30 @@ export class Skills extends React.Component {
   }
 } */
 
+export class About extends Component {
+  render() {
+    return (
+      <>
+        <Divider horizontal>
+          <Header as="h1" content="About Me" />
+        </Divider>
+        <Segment basic>
+          <Container text>
+            <p>
+              I am a tech savvy person who is excited about technologies. I love
+              building websites and even though I primarily focus on Front-end,
+              I can also go Full-stack development when needed. My hobbies
+              include building and learning computers, digital drawings,
+              basketball, and cars. I graduated in George Mason University in
+              2020 and earned my bachelors in Information Technology.
+            </p>
+          </Container>
+        </Segment>
+      </>
+    );
+  }
+}
+
 export class Skills extends Component {
   render() {
     return (
@@ -154,7 +179,15 @@ export class Hero extends Component {
     return (
       <div>
         <Segment vertical textAlign="center" className="main--hero">
-          <Container text>
+          <video
+            src={BGvid}
+            autoPlay
+            loop
+            playsInline
+            muted
+            className="main--bgvid"
+          />
+          <Container text className="main--hero--about">
             <Image
               src={Profile}
               circular
@@ -190,6 +223,7 @@ export class Main extends Component {
     return (
       <div className="main" id="Main">
         <Hero />
+        <About />
         <Skills />
       </div>
     );
