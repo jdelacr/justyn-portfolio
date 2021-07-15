@@ -11,6 +11,7 @@ import {
 import Profile from "../assets/Profile.jpg";
 import BGvid from "../assets/bg-video.mp4";
 import "../styles/pages/Main.scss";
+import resume from "../assets/Jan_Justyn_Dela_Cruz.pdf";
 
 /* export class Header extends React.Component {
   render() {
@@ -210,6 +211,13 @@ export class Hero extends Component {
               as="h3"
               content="I specialize in UI/UX Development, Responsive Web
             Design,&nbsp; and Web development"
+              inverted
+            />
+            <Header
+              as="a"
+              content="Resume"
+              href={resume}
+              download 
               inverted
             />
           </Container>

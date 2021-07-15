@@ -10,6 +10,63 @@ export class Experience extends Component {
           <Header as="h1" content="Experience" inverted />
         </Divider>
         <Segment raised className="experience--segment">
+          <Header as="h1" content="LCG Inc." />
+          <Header
+            sub
+            content="Jun 2021 - Current"
+            className="experience--date"
+          />
+          <Divider />
+          <Header as="h3" content="Position: Applicant Developer" />
+          <List>
+            <List.Item>
+              <List.Header>Responsibilities: </List.Header>
+              <List.List>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Maintain Drupal site on a daily basis for clients.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Maintain 508 compliance for Grant Solutions Application Review.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Update any UI within the Grant Solutions website.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Perform QA test on web application to ensure all new features are working as intended before production.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="right triangle" />
+                  <List.Content>
+                    <List.Description>
+                      Complete tasks using Jira as a ticketing system.
+                    </List.Description>
+                  </List.Content>
+                </List.Item>
+              </List.List>
+            </List.Item>
+          </List>
+        </Segment>
+        <Segment raised className="experience--segment">
           <Header as="h1" content="4Site Interactive Studios" />
           <Header
             sub
